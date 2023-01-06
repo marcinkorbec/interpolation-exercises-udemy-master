@@ -6,23 +6,23 @@
 <p>True jest przeciwieństwem ...</p>
 
 <h5>2. Wypisz pola z obiektu 'dog'</h5>
-<p>Mój pies ma na imie: ...</p>
-<p>Ma lat: ...</p>
-<p>Jest koloru: ...</p>
+<p>Mój pies ma na imie: {{dog.name}}</p>
+<p>Ma lat: {{dog.age}}</p>
+<p>Jest koloru: {{dog.color}}</p>
 
 <h2>3. Wypisz kolejno quotation1 i quotation2 z klasy komponentu:</h2>
-<p>Cytat 1:</p>
-<p>Cytat 2:</p>
+<p>Cytat 1: {{quotation1()}}</p>
+<p>Cytat 2: {{quotation2}}</p>
 
 <h2>4. Stwórz wyrażenia:</h2>
 <p>Dodaj dwie cyfry, odejmij i pomnóż.</p>
-<p>Wyrażenie: ...</p>
+<p>Wyrażenie: {{(10 -1) * 2}}</p>
 
 <p>
   Użyj skróconego if-a i w zależności od gettera 'randomBoolean' jeżeli jest
   ture wyświetl 'tak' jeżeli false 'nie';
 </p>
-<p>Wynik: ...</p>
+<p>Wynik: {{randomBoolean ? 'tak' : 'nie'}}</p>
 
 <p>Podziel zmienną 'num1' przez metodę 'divider': ...</p>
-<p>Wynik: ...</p>
+<p>Wynik: {{ num1 / divider() }}</p>
